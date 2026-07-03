@@ -4,7 +4,7 @@ from PIL import Image
 
 # page title
 st.title("Qr code generator")
-data=st.text_input("enter url")
+data=st.text_input("Enter url")
 if st.button("Generate QR"):
     if data:
         qr = qrcode.make(data)
